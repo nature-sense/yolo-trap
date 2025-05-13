@@ -4,3 +4,4 @@ venv
 sessions
 model
 *.jpg
+.DS_Store
