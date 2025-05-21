@@ -107,6 +107,7 @@ class DetectFlow:
                 track_ids = results[0].boxes.id.int().cpu().numpy().astype(np.int32)
                 scores = results[0].boxes.conf.numpy()
                 classes = results[0].boxes.cls.numpy().astype(np.int32)
+
                 annotated_frame = results[0].plot()
                 cv2.imwrite("img.jpg", annotated_frame)
 
